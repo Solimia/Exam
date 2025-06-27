@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Прогноз погоди</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Прогноз погоди</h1>
+    <input type="text" id="cityInput" placeholder="Введіть місто..." />
+    
+    <div class="tabs">
+      <button id="todayTab" class="active">Today</button>
+      <button id="forecastTab">5-day forecast</button>
+    </div>
+
+    <div id="todayPanel" class="panel active">
+      <div id="currentWeather"></div>
+      <div id="hourlyForecast"></div>
+      <div id="nearbyCities"></div>
+    </div>
+
+    <div id="forecastPanel" class="panel">
+        <div id="fiveDayForecast" class="forecast-grid"></div>
+        <div id="detailedDayForecast" class="hourly-grid"></div>
+
+      <div id="fiveDayForecast"></div>
+      <div id="fiveDayForecast"></div>
+      <div id="detailedDayForecast"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
